@@ -34,9 +34,13 @@ const ThemeSwitch: React.FC<ThemeSwitchProps> = (props: ThemeSwitchProps) => {
         type={value.includes('dark') ? 'primary' : 'default'}
         onClick={() => {
           if (value.includes('dark')) {
-            onChange(value.filter((theme) => theme !== 'dark'));
+            const themes = value.filter((theme) => theme !== 'dark') as ThemeName[];
+            window.localStorage.setItem('site-theme', JSON.stringify(themes));
+            onChange(themes);
           } else {
-            onChange([...value, 'dark']);
+            const themes = [...value, 'dark'] as ThemeName[];
+            window.localStorage.setItem('site-theme', JSON.stringify(themes));
+            onChange(themes);
           }
         }}
         tooltip={<FormattedMessage id="app.theme.switch.dark" />}

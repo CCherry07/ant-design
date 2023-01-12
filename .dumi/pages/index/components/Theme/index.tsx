@@ -269,16 +269,16 @@ const ThemesInfo: Record<THEME, Partial<ThemeData>> = {
   },
 };
 
-export default function Theme() {
+function Theme() {
   const style = useStyle();
   const { token } = useSiteToken();
   const [locale] = useLocale(locales);
 
   const [themeData, setThemeData] = React.useState<ThemeData>(ThemeDefault);
 
-  const onThemeChange = (_: Partial<ThemeData>, nextThemeData: ThemeData) => {
+  const onThemeChange = React.useCallback((_: Partial<ThemeData>, nextThemeData: ThemeData) => {
     setThemeData(nextThemeData);
-  };
+  }, []);
 
   const { compact, themeType, ...themeToken } = themeData;
   const isLight = themeType !== 'dark';
@@ -442,7 +442,9 @@ export default function Theme() {
                 <Breadcrumb.Item>
                   <HomeOutlined />
                 </Breadcrumb.Item>
-                <Breadcrumb.Item overlay={<Menu items={subMenuItems} />}>Design</Breadcrumb.Item>
+                <Breadcrumb.Item css={{ cursor: 'pointer' }} menu={{ items: subMenuItems }}>
+                  Design
+                </Breadcrumb.Item>
                 <Breadcrumb.Item>Themes</Breadcrumb.Item>
               </Breadcrumb>
               <Content>
@@ -467,7 +469,6 @@ export default function Theme() {
                     <Form.Item label={locale.titleTheme} name="themeType">
                       <ThemePicker />
                     </Form.Item>
-
                     <Form.Item label={locale.titlePrimaryColor} name="colorPrimary">
                       <ColorPicker />
                     </Form.Item>
@@ -575,3 +576,4 @@ export default function Theme() {
     </Group>
   );
 }
+export default React.memo(Theme);

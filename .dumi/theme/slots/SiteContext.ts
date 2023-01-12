@@ -8,12 +8,10 @@ export interface SiteContextProps {
   theme: ThemeName[];
   updateSiteConfig: (props: Partial<SiteContextProps>) => void;
 }
-
 const SiteContext = React.createContext<SiteContextProps>({
   isMobile: false,
   direction: 'ltr',
   theme: ['light'],
   updateSiteConfig: () => {},
 });
-
 export default SiteContext;

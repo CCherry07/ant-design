@@ -42,6 +42,8 @@ const GlobalLayout: React.FC = () => {
 
   const updateSiteConfig = useCallback(
     (props: SiteState) => {
+      const { theme: nextTheme } = props;
+      window.localStorage.setItem('site-theme', JSON.stringify(nextTheme));
       setSiteState((prev) => ({ ...prev, ...props }));
 
       // updating `searchParams` will clear the hash

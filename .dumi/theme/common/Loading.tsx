@@ -1,10 +1,10 @@
 import React from 'react';
 import { Skeleton, Space, Spin } from 'antd';
 import { useLocation } from 'dumi';
+import SiteContext from '../slots/SiteContext';
 
 const Loading: React.FC = () => {
   const { pathname } = useLocation();
-
   if (
     pathname.startsWith('/components') ||
     pathname.startsWith('/docs') ||
