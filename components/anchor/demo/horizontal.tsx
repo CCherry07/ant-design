@@ -44,7 +44,7 @@ const App: React.FC = () => (
       <div
         id="part-1"
         style={{
-          width: '100vw',
+          width: '100%',
           height: '100vh',
           textAlign: 'center',
           background: 'rgba(0,255,0,0.02)',
@@ -53,7 +53,7 @@ const App: React.FC = () => (
       <div
         id="part-2"
         style={{
-          width: '100vw',
+          width: '100%',
           height: '100vh',
           textAlign: 'center',
           background: 'rgba(0,0,255,0.02)',
@@ -61,19 +61,19 @@ const App: React.FC = () => (
       />
       <div
         id="part-3"
-        style={{ width: '100vw', height: '100vh', textAlign: 'center', background: '#FFFBE9' }}
+        style={{ width: '100%', height: '100vh', textAlign: 'center', background: '#FFFBE9' }}
       />
       <div
         id="part-4"
-        style={{ width: '100vw', height: '100vh', textAlign: 'center', background: '#F4EAD5' }}
+        style={{ width: '100%', height: '100vh', textAlign: 'center', background: '#F4EAD5' }}
       />
       <div
         id="part-5"
-        style={{ width: '100vw', height: '100vh', textAlign: 'center', background: '#DAE2B6' }}
+        style={{ width: '100%', height: '100vh', textAlign: 'center', background: '#DAE2B6' }}
       />
       <div
         id="part-6"
-        style={{ width: '100vw', height: '100vh', textAlign: 'center', background: '#CCD6A6' }}
+        style={{ width: '100%', height: '100vh', textAlign: 'center', background: '#CCD6A6' }}
       />
     </div>
   </>
