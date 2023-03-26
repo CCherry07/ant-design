@@ -244,27 +244,27 @@ Array [
   <div>
     <div
       id="part-1"
-      style="width: 100vw; height: 100vh; text-align: center; background: rgba(0, 255, 0, 0.02);"
+      style="width: 100%; height: 100vh; text-align: center; background: rgba(0, 255, 0, 0.02);"
     />
     <div
       id="part-2"
-      style="width: 100vw; height: 100vh; text-align: center; background: rgba(0, 0, 255, 0.02);"
+      style="width: 100%; height: 100vh; text-align: center; background: rgba(0, 0, 255, 0.02);"
     />
     <div
       id="part-3"
-      style="width: 100vw; height: 100vh; text-align: center; background: rgb(255, 251, 233);"
+      style="width: 100%; height: 100vh; text-align: center; background: rgb(255, 251, 233);"
     />
     <div
       id="part-4"
-      style="width: 100vw; height: 100vh; text-align: center; background: rgb(244, 234, 213);"
+      style="width: 100%; height: 100vh; text-align: center; background: rgb(244, 234, 213);"
     />
     <div
       id="part-5"
-      style="width: 100vw; height: 100vh; text-align: center; background: rgb(218, 226, 182);"
+      style="width: 100%; height: 100vh; text-align: center; background: rgb(218, 226, 182);"
     />
     <div
       id="part-6"
-      style="width: 100vw; height: 100vh; text-align: center; background: rgb(204, 214, 166);"
+      style="width: 100%; height: 100vh; text-align: center; background: rgb(204, 214, 166);"
     />
   </div>,
 ]
